@@ -1,0 +1,19 @@
+CREATE TABLE users (
+id INT AUTO_INCREMENT PRIMARY KEY,
+username VARCHAR(50) NOT NULL,
+email VARCHAR(100) NOT NULL,
+password VARCHAR(255) NOT NULL,
+fullname VARCHAR(100) NOT NULL,
+dob DATE NOT NULL,
+address VARCHAR(255),
+gender ENUM('мужской', 'женский') NOT NULL,
+interests TEXT,
+vk_link VARCHAR(255),
+blood_type ENUM('I', 'II', 'III', 'IV') NOT NULL,
+rhesus_factor ENUM('+', '-') NOT NULL
+);
+
+ALTER TABLE users
+ADD COLUMN failed_attempts INT DEFAULT 0,
+ADD COLUMN last_failed_attempt DATETIME DEFAULT NULL;
+   
