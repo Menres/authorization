@@ -1,0 +1,76 @@
+/* Основные стили для страницы */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Страница занимает минимум 100% высоты окна */
+    margin: 0;
+}
+
+/* Контейнер для всего содержимого кроме подвала */
+.container {
+    flex: 1; /* Контент будет растягиваться на оставшееся пространство */
+    padding-top: 80px; /* Отступ сверху для отделения от шапки */
+    padding-bottom: 20px; /* Отступ снизу, чтобы контент не касался подвала */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #343a40;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+/* Подвал липнет к нижней части страницы */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+/* styles.css */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Заставляет контейнер занимать всю высоту окна */
+}
+
+main {
+    flex: 1; /* Позволяет основному контенту занимать все доступное пространство */
+}
+
+.bg-dark {
+    background-color: #343a40; /* Цвет фона для подвала */
+}
+
+.text-white {
+    color: white; /* Цвет текста для подвала */
+}
+
+.mt-5 {
+    margin-top: 3rem; /* Отступ сверху для подвала */
+}
+
+.container {
+    width: 100%;
+    max-width: 960px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+}
